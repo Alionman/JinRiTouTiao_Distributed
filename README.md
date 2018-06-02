@@ -1,1 +1,2 @@
 # JinRiTouTiao_Distributed
+实现了分布式爬取今日头条
