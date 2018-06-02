@@ -29,7 +29,9 @@ REDIS_PARAMS = {
 
 }
 SCHEDULER = "scrapy_redis.scheduler.Scheduler"
-DUPEFILTER_CLASS = "scrapy_redis.dupefilter.RFPDupeFilter"
+#DUPEFILTER_CLASS = "scrapy_redis.dupefilter.RFPDupeFilter"
+#dupefilter_redis改写自dupefilter，使用splash的RFPDupeFilter继承redis的RFPDupeFilter
+DUPEFILTER_CLASS = "scrapy_splash.dupefilter_redis.RFPDupeFilter"
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 #CONCURRENT_REQUESTS = 32
